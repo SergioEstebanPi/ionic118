@@ -7,8 +7,37 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+	lugares:Array<any>;
 
+  constructor(public navCtrl: NavController) {
+  	this.lugares = [
+	  	{
+	  		nombre: "Cafetería",
+	  		pagina: "CafeteriaPage",
+	  		icono: "logo-buffer"
+	  	},
+	  	{
+	  		nombre: "Centro comercial",
+	  		pagina: "CentrocomercialPage",
+	  		icono: "briefcase"
+	  	},
+	  	{
+	  		nombre: "Trabajo",
+	  		icono: "briefcase"
+	  	},
+	  	{
+	  		nombre: "Parque",
+	  		icono: "american-football"
+	  	},
+	  	{
+	  		nombre: "Floristería",
+	  		icono: "bonfire"
+	  	},
+  	];
+  }
+
+  irA(pagina){
+  	this.navCtrl.push(pagina);
   }
 
 }
