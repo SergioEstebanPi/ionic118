@@ -40,4 +40,8 @@ export class AboutPage {
   	this.navCtrl.push(pagina);
   }
 
+  irAPlantilla(lugar){
+  	this.navCtrl.push("InfoPage", {lugar: lugar});
+  }
+
 }

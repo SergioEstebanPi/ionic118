@@ -15,7 +15,7 @@
 
   <ion-list>
 
-    <button ion-item *ngFor="let lugar of lugares" (click)="irA(lugar.pagina)">
+    <button ion-item *ngFor="let lugar of lugares" (click)="irAPlantilla(lugar)">
       <ion-icon name="{{ lugar.icono }}" item-start></ion-icon>
       {{ lugar.nombre }}
     </button>

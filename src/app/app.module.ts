@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { NosotrosPage } from '../pages/nosotros/nosotros';
 
+// se agregan las paginas que se necesitan cargadas apenas se inicie la app
 @NgModule({
   declarations: [
     MyApp,
